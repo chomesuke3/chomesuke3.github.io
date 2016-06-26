@@ -7,10 +7,10 @@ self.addEventListener('push', function(event) {
   // 動的にユーザーごとにメッセージを変えたい場合は、
   // ペイロードの暗号化を行うか、FetchAPIで動的に情報を取得する必要があります。
   var title = '新着記事のお知らせです';
-  var body = '記事を公開しました';
-  var icon = 'ics_logo_512x512.png';
+  var body = 'agexHPのブログが更新されました';
+  var icon = 'blog_writer_0045.png';
   var tag = 'simple-push-demo-notification-tag';
-  var url = 'http://www.yahoo.co.jp/';
+  var url = 'http://www.agex.co.jp/blog/';
 
   event.waitUntil(
     self.registration.showNotification(title, {
